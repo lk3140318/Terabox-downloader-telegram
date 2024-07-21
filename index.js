@@ -11,8 +11,8 @@ async function main() {
       ctx.reply(
         `Hi ${ctx.message.from.first_name},\n\nI can Download Files from Terabox.\n\nMade with ❤️ by @botcodes123\n\nSend any terabox link to download.`,
         Markup.inlineKeyboard([
-          Markup.button.url(" Channel", "https://t.me/botcodes123"),
-          Markup.button.url("Report bug", "https://t.me/Armanidrisi_bot"),
+          Markup.button.url(" Channel", "https://t.me/+g7juTHwf6_tlM2Y9"),
+          Markup.button.url("Report bug", "https://t.me/@Help_To_Thanks_Bot"),
         ]),
       );
     } catch (e) {
@@ -24,8 +24,8 @@ async function main() {
     if (ctx.message && ctx.message.text) {
       const messageText = ctx.message.text;
       if (
-        messageText.includes("terabox.com") ||
-        messageText.includes("teraboxapp.com")
+        messageText.includes("1024terabox.com") ||
+        messageText.includes("1024terabox.com")
       ) {
         //const parts = messageText.split("/");
         //const linkID = parts[parts.length - 1];
@@ -41,11 +41,11 @@ async function main() {
             console.error(e); // Log the error for debugging
           }
         } else {
-          ctx.reply('Something went wrong 🙃');
+          ctx.reply('Wat For File Send');
         }
         console.log(details);
       } else {
-        ctx.reply("Please send a valid Terabox link.");
+        ctx.reply("Please send a valid 1024terabox link.");
       }
     } else {
       //ctx.reply("No message text found.");
