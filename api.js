@@ -3,7 +3,7 @@ const axios = require("axios");
 async function getDetails(id) {
     try {
         const response = await axios.get(
-            `https://teraboxapp.com/s/1RCBLl4RBXh446ZKoHgHZJt_Q`
+            `https://terabox-dl-arman.vercel.app/api?data=${id}`
         );
         return response.data;
     } catch (error) {
